@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="InMang(parseInt(prompt('nhập vào số phần tử trong mảng')))">
+<script>
+    function InMang(num) {
+        let arr = [];
+        for (let i=0; i<num; i++) {
+            str = prompt("nhập vào phần tử thứ " + (i+1))
+            arr.push(str);
+        }
+        arr.reverse();
+        document.write(arr);
+    }
+</script>
+</body>
+</html>
